@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class=" container d-flex justify-content-center align-items-center ">
+    <h1 class="py-2 position-relative  mt-5">Bookmarker</h1>
+   </div>
+
+<main class="py-3 container">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="border-dott w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-bookmark icon"></i>
+                        <h2>Bookmark your favorite sites</h2>
+                        <i class="fa-solid fa-bookmark icon"></i>
+                    </div>
+                    <div class="w-100 mt-3">
+                        <div class="w-100 mb-3">
+                            <label for="bookmarkName " class="pb-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                            <input type="text" placeholder="Bookmark Name" class="form-control fs-5" id="bookmarkName">
+                            <p id="name-alert" class="alert alert-danger w-75 m-auto d-none"> <i class="fa-solid fa-arrow-right"></i> Site name must contain at least 3 characters</p>
+                <p id="exist" class="alert alert-danger w-75 m-auto d-none">Site Name Exist</p>
+                        </div>
+                        <div class="w-100 mb-3">
+                            <label for="bookmarkUrl" class="pb-2"><i class="fa-solid fa-link"></i>Site URL</label>
+                            <input type="text" placeholder="Website URL" class="form-control fs-5" id="bookmarkUrl">
+                            <p id="url-alert" class="alert alert-danger w-75 m-auto d-none"> <i class="fa-solid fa-arrow-right"></i> Site URL must be a valid one</p>
+                        </div>
+                    </div>
+                    <div>
+                  
+             <button class="btn btn-submit px-5 fs-4" id="btnSubmit">submit</button>
+                    </div>
+                </div>
+            </div>
+            <div  class="table-responsive-md">
+                <table class="table mt-4 text-center bg-light">
+                    <thead>
+    <tr>
+        <th class="text-capitalize fs-5">index</th>
+        <th class="text-capitalize fs-5">Website Name</th>
+        <th class="text-capitalize fs-5">Visit</th>
+        <th class="text-capitalize fs-5">Delete</th>
+    
+    </tr>
+                    </thead>
+                    <tbody id="tableData">
+    
+                    </tbody>
+                </table>
+            </div>
+     
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>
